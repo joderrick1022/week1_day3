@@ -27,24 +27,47 @@ namespace week1_day3
                   */
 
 
-            Console.WriteLine("what day is today");
-            string userAnswer = Console.ReadLine();
+            /*       Console.WriteLine("what day is today");
+                   string userAnswer = Console.ReadLine();
 
-            if (userAnswer == "monday.")
+                   if (userAnswer == "monday.")
+                   {
+                       Console.WriteLine("Back to work");
+                   }
+                   else if (userAnswer == "Friday")
+
+
+                           {
+                       Console.WriteLine("TGIF");
+               }
+              */
+
+            Console.WriteLine("how old are you");
+            int userAge = int.Parse(Console.ReadLine());
+            if (userAge < 1)
             {
-                Console.WriteLine("Back to work");
+                Console.WriteLine("Your just a baby");
             }
-            else if (userAnswer == "Friday")
+            else if (userAge > 1 && userAge < 4)
+            {
 
+                Console.WriteLine("Yay Toddlers");
 
-                    {
-                Console.WriteLine("TGIF");
             }
-            
-
-
+            else if (userAge >= 4 && userAge < 65)
+            {
+                Console.WriteLine("Life isackward");
+            }
+            else if (userAge >= 65 && userAge < 100)
+            {
+                Console.WriteLine("Enjoy your Retirement");
+            }
+            else
+            {
+                Console.WriteLine("that is really not your age");
+            }
 
         }
-        
+
     }
 }
