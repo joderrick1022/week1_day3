@@ -42,30 +42,73 @@ namespace week1_day3
                }
               */
 
-            Console.WriteLine("how old are you");
-            int userAge = int.Parse(Console.ReadLine());
-            if (userAge < 1)
-            {
-                Console.WriteLine("Your just a baby");
-            }
-            else if (userAge > 1 && userAge < 4)
-            {
+            /*          Console.WriteLine("how old are you");
+                      int userAge = int.Parse(Console.ReadLine());
+                      if (userAge < 1)
+                      {
+                          Console.WriteLine("Your just a baby");
+                      }
+                      else if (userAge > 1 && userAge < 4)
+                      {
 
-                Console.WriteLine("Yay Toddlers");
+                          Console.WriteLine("Yay Toddlers");
+
+                      }
+                      else if (userAge >= 4 && userAge < 65)
+                      {
+                          Console.WriteLine("Life isackward");
+                      }
+                      else if (userAge >= 65 && userAge < 100)
+                      {
+                          Console.WriteLine("Enjoy your Retirement");
+                      }
+                      else
+                      {
+                          Console.WriteLine("that is really not your age");
+                      }
+          */
+        
+
+            Console.WriteLine("how many points did you earn");
+            int pointsEarned = int.Parse(Console.ReadLine());
+
+            switch (pointsEarned)
+            {
+                case 0:
+                    Console.WriteLine("you loose.");
+                    break;
+                case 1:
+                    Console.WriteLine("needs practice");
+                    break;
+
+                case 2:
+                    Console.WriteLine("oh Target");
+                    break;
+
+                case 3:
+                    Console.WriteLine("Superstar");
+                    break;
+
+                case 4:
+                    Console.WriteLine("OverAchiever");
+                    break;
+
+                case 5:
+                    Console.WriteLine("You Cheated");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid score Entered");
+                    break;
+
 
             }
-            else if (userAge >= 4 && userAge < 65)
-            {
-                Console.WriteLine("Life isackward");
-            }
-            else if (userAge >= 65 && userAge < 100)
-            {
-                Console.WriteLine("Enjoy your Retirement");
-            }
-            else
-            {
-                Console.WriteLine("that is really not your age");
-            }
+
+
+
+
+
+
 
         }
 
